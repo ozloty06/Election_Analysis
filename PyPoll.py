@@ -80,35 +80,3 @@ winning_candidate_summary = (
     f"-------------------------\n")
 
 print(winning_candidate_summary)
-=======
-# Add our dependencies
-import csv
-import os
-
-# Assign a variable for the file to load and the path.
-file_to_load=os.path.join("resources","election_results.csv")
-# Create a filename variable to a direct or indirect path to the file.
-file_to_save = os.path.join("analysis","election_analysis.txt")
-
-# Open the election results and read the file.
-# election_data = open(file_to_load,'r')
-with open(file_to_load) as election_data: 
-    
-    # To do: Read and analyze data here.
-    # Read the file object with the reader function.
-    file_reader=csv.reader(election_data)
-
-    # Read and print the header row.
-    headers = next(file_reader)
-    print(headers)
-    
-
-
-
-
-# Get the total number of votes cast
-# Create a complete list of candidates who received votes
-# Sum the total number of votes each candidate received
-# Calculate the votes each candiate won
-# Determine who is the winner based on the highest percent of population
->>>>>>> c91120b (uploading analysis)
