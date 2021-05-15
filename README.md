@@ -1,7 +1,7 @@
 # Election_Analysis
 
 ## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+Seth and Tom are Colorado Board of Elections employees and have asked for help pulling together an election audit analysis of a recent local election to be submitted to the election commission. They have requested the following tasks to complete the election audit of a recent local congressional election.
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of the candidates who received votes.
@@ -12,12 +12,18 @@ A Colorado Board of Elections employee has given you the following tasks to comp
 ## Resources
 - Data Source: election_results.csv
 - Software: Python 3.8.5, Visual Studio Code, 
-<<<<<<< HEAD
+
 An analysis of election data in a CSV file using Python in VS Code, 1.56.1
 
-## Summary
+## Election-Audit Results
 The analysis of the election show that:
 - There were 369,711 votes cast in the election.
+- The county results include:
+  - Jefferson county had 10.5% of votes and a total count of 38,855 votes.
+  - Denver county had 82.8% of votes and a total count of 306,055 votes.
+  - Arapahoe county had 6.7% of votes and a total count of 24,801 votes.
+- The county with the most votes was:
+  - Denver, which had 82.8% of the votes and a total vote count of 306,055 votes.
 - The candidates were:
   - Candidate 1: Charles Casper Stockham
   - Candidate 2: Diana DeGette
@@ -29,12 +35,9 @@ The analysis of the election show that:
 - The winner of the election was:
   - Candidate 2, Diane DeGette, who received 73.8% of the votes and 272,892 nuymber of votes.
 
-## Challenge Overview
-An additional request from the election commission to complete the audit asks for:
-- The voter turnout for each county
-- The percentage of votes from each county out of the total count
-- The county with the highest turnout
-
-To complete this request, our Python script requires additional for loops and conditional statements with membership and logical operators to find the requested results. These results are to be printed to the command line and saved to our existing election_results.txt file. A written analysis is to accommpany these items to summarize the methods and how the presented data may be of use.
-
-## Challenge Summary
+## Election-Audit Summary
+As an added benefit to the election commission, this script was written in such a way that it can easily be repurposed for additional election audit opportunities. The script accepts election results in a simple text format known as a .csv file, or comma separated values. This allows for handling large data sets extending beyond the initial three counties and three candidates included in our analysis. Further, this script can be modified in several ways to provide additional analysis for the elections commission, including:
+- Voter Party Affiliation. 
+&nbsp;&nbsp;&nbsp;&nbsp;Voters can optionally provide their party affilation as they cast their votes which can be used to study both the distribution of the party within the county votes and for each of the candidates in the election. This would potentially require a modification to the ballot, adjustment to the .csv file to provide the raw data on party affiliation, and adjustments to logic loops included in the code for both county and candidate related analysis. Output would include a breakdown of party affilations within each county and for each candidate.
+- Proposal Analysis.
+&nbsp;&nbsp;&nbsp;&nbsp; While the current script analyzes candidate results, the program could be easily modified to evaluate quantity of voters for or against  proposed state or local ballot proposition(s). This analysis would still provide a breakdown by county as well as for each proposition. 
